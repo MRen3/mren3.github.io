@@ -1,7 +1,7 @@
-title: EN3
-description: "Estoy empezando mi camino en el hacking etico, espero poder ser de ayuda en tu camino"
+title: "Blog de mren3"
+description: "Soy un apasionado del hacking etico, en cuanto vaya aprendiendo algo nuevo o importante, lo ire publicando en este blog. Aprender algo y compartirlo, es la escencia de el hackiing etico, ya que aprendiendo unos de otros, no hay fin de aprendizaje"
 author:
-  name: "MRen3"
+  name: "mren3"
   email: "mecayetatronico@gmail.com"
   url: "https://mren3.github.io"
 
@@ -28,5 +28,5 @@ plugins:
   - jekyll-sitemap
 
 # Custom variables
-owner : "MRen3"
+owner : "mren3"
 year : "2024"

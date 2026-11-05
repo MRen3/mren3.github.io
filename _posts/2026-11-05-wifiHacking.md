@@ -51,14 +51,12 @@ If they give you ist location on your system, it's ok. If not, install them.
 
 Run iw dev to see thw wireless devices available and the current mode
 
-![[Pasted image 20261018234540.png]]
+![iwdev](imagess/Pasted image 20261018234540.png)
 
 Let's put it on monitor mode
+![monitormode1](imagess/Pasted image 20261018234853.png)
 
-![[Pasted image 20261018234853.png]]
-
-![[Pasted image 20261018234910.png]]
-
+![monitormode2](imagess/Pasted image 20261018234910.png)
 
 The attack surface
 
@@ -66,17 +64,17 @@ A general scan
 
 airodump-ng: to copy or extract information (the MAC of close routers and AP)
 
-![[Pasted image 20261018235137.png]]
+![aGeneralScan1](imagess/Pasted image 20261018235137.png)
 
 
-![[Pasted image 20261018235153.png]]
+![aGeneralScan2](imagess/Pasted image 20261018235153.png)
 
 You can stop it with space and copy all the important information of the target. 
 
-![[Pasted image 20261018235417.png]]
+![information](imagess/Pasted image 20261018235417.png
 
 Extract information of your target router, the desired handshake capture and the stations connected to the target. On my case, my own router. 
-![[Pasted image 20261018235624.png]]
+![extractingInformationOfTarget1](imagess/Pasted image 20261018235624.png)
 
 -c: channel
 
@@ -85,7 +83,7 @@ Extract information of your target router, the desired handshake capture and the
 -w: to definy the name of the "binario.cap" file
 
 
-![[Pasted image 20261019002343.png]]
+![extractingInformationOfTarget2](imagess/Pasted image 20261019002343.png)
 
 The stations are the clients connected to the router. One of them is my smarthphone. It has the mac address that starts with 12.
 
@@ -96,11 +94,11 @@ The deauth consist on sending deauth busrt packets to a singles devices or to al
 
 To all the devices connected to a router: 
 
-![[Pasted image 20261019003300.png]]
+![theDeauthAttacktoAllTheDevices](imagess/Pasted image 20261019003300.png)
 
 To the target client (STATION)
 
-![[Pasted image 20261019003707.png]]
+![theDeauthAttackToATargetClient](imagess/Pasted image 20261019003707.png)
 
 
 > [!NOTE]
@@ -111,10 +109,10 @@ However, it has to be the first time you run the deauth attack to this network. 
 
 Thus, i used my jammer bluetooth/wifi that i created before.
 
-My jammer bluettoth/wifi
+My jammer bluetooth/wifi
 
 
-![[Pasted image 20261019004349.png]]
+![MyJammerBluetooth/Wifi](imagess/Pasted image 20261019004349.png)
 
 
 it disconnect nearby bluettoth devices from nearby smartphones and disconnect the wifi of nearby devices as well. 
@@ -122,15 +120,15 @@ it disconnect nearby bluettoth devices from nearby smartphones and disconnect th
 Thus, i decided to use this instead of the deauth attack.
 
 
-![[Pasted image 20261019004724.png]]
+![myPhoneIsConnectedToTheWifi](imagess/Pasted image 20261019004724.png)
 
 Since we already know the MAC of my smartphone, just use this to get the handshake.
 
 My smarthphone is connected to the wifi network. Let's use our jammer bluettoth/wifi to disconnect it from our network.
 
-For that, i connected my jammer bluetooth/wifi to a batery for energy and it turned on and inmediately disconnect my smartphone an all other nearby devices from my network. 
+For that, i connected my jammer bluetooth/wifi to a batery for energy and it turned on and inmediately disconnect my smartphone and all other nearby devices from my network. 
 
-![[Pasted image 20261019010021.png]]
+![myPhoneWasDisconectedFromTheNEtworkByTheJammerBluetooth/Wifi](imagess/Pasted image 20261019010021.png)
 
 > [!NOTE]
 > Don't use the space here. 
@@ -140,16 +138,16 @@ For that, i connected my jammer bluetooth/wifi to a batery for energy and it tur
 
 Also, i turned my phone on and it connect to my wifi.
 
-![[Pasted image 20261019010759.png]]
+![theWPAHandshake](imagess/Pasted image 20261019010759.png)
 
 Then, my smartphone appears here again and i got the WPA handshake.
 
 WPA handshake means that you got the password. However, it's encrypted. Thus, let's crack it. 
 
-![[Pasted image 20261019011241.png]]
+![aBruteForceAttackAgainstTheCapFile](imagess/Pasted image 20261019011241.png)
 
 
-![[Pasted image 20261019011310.png]]
+![weGotThePassword](imagess/Pasted image 20261019011310.png)
 
 Successfully cracked. 
 

@@ -31,7 +31,7 @@ The command line
 
 ip a : to see the interfaces and its ipv adressess
 
-imagess/Pasted image 20261018234148.png
+![interfaces1](imagess/Pasted image 20261018234148.png)
 
 
 My wifi adapter:

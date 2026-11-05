@@ -36,7 +36,7 @@ ip a : to see the interfaces and its ipv adressess
 
 My wifi adapter:
 
-![[imagess/Pasted image 20261018234205.png]]
+![interfaces2](imagess/Pasted image 20261018234205.png)
 
 Run the following:
 
